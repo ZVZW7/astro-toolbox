@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images"
+public_folder: "src/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Посты"
+    folder: "src/content/posts"
+    create: true
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Дата", name: "date", widget: "datetime" }
+      - { label: "Обложка", name: "thumbnail", widget: "image" }
+      - { label: "Текст", name: "body", widget: "markdown" }
